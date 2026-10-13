@@ -1,0 +1,38 @@
+[
+  {
+    "Target": "Cath",
+    "Model": "XGBoost",
+    "Accuracy": 0.8548,
+    "Precision": 0.8805,
+    "Recall": 0.9213,
+    "F1": 0.9005,
+    "ROC-AUC": 0.907
+  },
+  {
+    "Target": "LAD",
+    "Model": "ExtraTrees",
+    "Accuracy": 0.8053,
+    "Precision": 0.798,
+    "Recall": 0.8927,
+    "F1": 0.8427,
+    "ROC-AUC": 0.8374
+  },
+  {
+    "Target": "LCX",
+    "Model": "XGBoost",
+    "Accuracy": 0.6799,
+    "Precision": 0.6019,
+    "Recall": 0.5462,
+    "F1": 0.5727,
+    "ROC-AUC": 0.7377
+  },
+  {
+    "Target": "RCA",
+    "Model": "LogisticRegression",
+    "Accuracy": 0.6601,
+    "Precision": 0.5407,
+    "Recall": 0.6404,
+    "F1": 0.5863,
+    "ROC-AUC": 0.6925
+  }
+]

@@ -1,0 +1,4547 @@
+[
+  {
+    "patient_id": 1,
+    "risk": {
+      "cad": 0.9281,
+      "lad": 0.9307,
+      "lcx": 0.1068,
+      "rca": 0.4389
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 2,
+    "risk": {
+      "cad": 0.9956,
+      "lad": 0.9866,
+      "lcx": 0.8534,
+      "rca": 0.1553
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 3,
+    "risk": {
+      "cad": 0.974,
+      "lad": 0.9892,
+      "lcx": 0.0797,
+      "rca": 0.4027
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 4,
+    "risk": {
+      "cad": 0.1758,
+      "lad": 0.0261,
+      "lcx": 0.1297,
+      "rca": 0.2475
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 5,
+    "risk": {
+      "cad": 0.2306,
+      "lad": 0.0267,
+      "lcx": 0.0669,
+      "rca": 0.1749
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 6,
+    "risk": {
+      "cad": 0.8963,
+      "lad": 0.9608,
+      "lcx": 0.6713,
+      "rca": 0.8093
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 7,
+    "risk": {
+      "cad": 0.9884,
+      "lad": 0.9917,
+      "lcx": 0.0822,
+      "rca": 0.323
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 8,
+    "risk": {
+      "cad": 0.9871,
+      "lad": 0.985,
+      "lcx": 0.6636,
+      "rca": 0.8265
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 9,
+    "risk": {
+      "cad": 0.0497,
+      "lad": 0.0137,
+      "lcx": 0.05,
+      "rca": 0.0037
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 10,
+    "risk": {
+      "cad": 0.9887,
+      "lad": 0.06,
+      "lcx": 0.8892,
+      "rca": 0.5201
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 11,
+    "risk": {
+      "cad": 0.9907,
+      "lad": 0.9733,
+      "lcx": 0.8171,
+      "rca": 0.3936
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 12,
+    "risk": {
+      "cad": 0.9971,
+      "lad": 0.9825,
+      "lcx": 0.7603,
+      "rca": 0.9212
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 13,
+    "risk": {
+      "cad": 0.9939,
+      "lad": 0.9574,
+      "lcx": 0.2706,
+      "rca": 0.8756
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 14,
+    "risk": {
+      "cad": 0.9807,
+      "lad": 0.9474,
+      "lcx": 0.1977,
+      "rca": 0.574
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 15,
+    "risk": {
+      "cad": 0.804,
+      "lad": 0.9307,
+      "lcx": 0.1909,
+      "rca": 0.3385
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 16,
+    "risk": {
+      "cad": 0.9807,
+      "lad": 0.975,
+      "lcx": 0.8428,
+      "rca": 0.8552
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 17,
+    "risk": {
+      "cad": 0.1231,
+      "lad": 0.0154,
+      "lcx": 0.0807,
+      "rca": 0.098
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 18,
+    "risk": {
+      "cad": 0.145,
+      "lad": 0.0143,
+      "lcx": 0.2122,
+      "rca": 0.105
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 19,
+    "risk": {
+      "cad": 0.9498,
+      "lad": 0.9424,
+      "lcx": 0.4221,
+      "rca": 0.766
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 20,
+    "risk": {
+      "cad": 0.9961,
+      "lad": 0.0529,
+      "lcx": 0.864,
+      "rca": 0.2395
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 21,
+    "risk": {
+      "cad": 0.6298,
+      "lad": 0.019,
+      "lcx": 0.5146,
+      "rca": 0.1026
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 22,
+    "risk": {
+      "cad": 0.9165,
+      "lad": 0.9574,
+      "lcx": 0.6591,
+      "rca": 0.5493
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 23,
+    "risk": {
+      "cad": 0.9916,
+      "lad": 0.9866,
+      "lcx": 0.7864,
+      "rca": 0.9081
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 24,
+    "risk": {
+      "cad": 0.998,
+      "lad": 0.9599,
+      "lcx": 0.5215,
+      "rca": 0.9126
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 25,
+    "risk": {
+      "cad": 0.9731,
+      "lad": 0.965,
+      "lcx": 0.19,
+      "rca": 0.3894
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 26,
+    "risk": {
+      "cad": 0.9866,
+      "lad": 0.9967,
+      "lcx": 0.3474,
+      "rca": 0.4102
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 27,
+    "risk": {
+      "cad": 0.126,
+      "lad": 0.0166,
+      "lcx": 0.0942,
+      "rca": 0.0832
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 28,
+    "risk": {
+      "cad": 0.8045,
+      "lad": 0.0273,
+      "lcx": 0.1095,
+      "rca": 0.5091
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 29,
+    "risk": {
+      "cad": 0.9914,
+      "lad": 0.9808,
+      "lcx": 0.7147,
+      "rca": 0.2439
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 30,
+    "risk": {
+      "cad": 0.9947,
+      "lad": 0.0832,
+      "lcx": 0.9331,
+      "rca": 0.662
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 31,
+    "risk": {
+      "cad": 0.989,
+      "lad": 0.9758,
+      "lcx": 0.3061,
+      "rca": 0.6347
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 32,
+    "risk": {
+      "cad": 0.9655,
+      "lad": 0.0683,
+      "lcx": 0.841,
+      "rca": 0.4818
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 33,
+    "risk": {
+      "cad": 0.9785,
+      "lad": 0.965,
+      "lcx": 0.7303,
+      "rca": 0.7627
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 34,
+    "risk": {
+      "cad": 0.9701,
+      "lad": 0.9474,
+      "lcx": 0.8448,
+      "rca": 0.7527
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 35,
+    "risk": {
+      "cad": 0.9389,
+      "lad": 0.985,
+      "lcx": 0.0675,
+      "rca": 0.7495
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 36,
+    "risk": {
+      "cad": 0.0334,
+      "lad": 0.0374,
+      "lcx": 0.0471,
+      "rca": 0.0161
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 37,
+    "risk": {
+      "cad": 0.9823,
+      "lad": 0.9733,
+      "lcx": 0.7472,
+      "rca": 0.6469
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 38,
+    "risk": {
+      "cad": 0.8412,
+      "lad": 0.9875,
+      "lcx": 0.5159,
+      "rca": 0.1844
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 39,
+    "risk": {
+      "cad": 0.9063,
+      "lad": 0.9708,
+      "lcx": 0.1946,
+      "rca": 0.5139
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 40,
+    "risk": {
+      "cad": 0.9973,
+      "lad": 0.9883,
+      "lcx": 0.7828,
+      "rca": 0.8335
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 41,
+    "risk": {
+      "cad": 0.9768,
+      "lad": 0.9716,
+      "lcx": 0.2689,
+      "rca": 0.6451
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 42,
+    "risk": {
+      "cad": 0.2067,
+      "lad": 0.0065,
+      "lcx": 0.0609,
+      "rca": 0.1175
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 43,
+    "risk": {
+      "cad": 0.0322,
+      "lad": 0.0541,
+      "lcx": 0.0582,
+      "rca": 0.0058
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 44,
+    "risk": {
+      "cad": 0.9574,
+      "lad": 0.9574,
+      "lcx": 0.2163,
+      "rca": 0.0174
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 45,
+    "risk": {
+      "cad": 0.9238,
+      "lad": 0.0446,
+      "lcx": 0.146,
+      "rca": 0.8546
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 46,
+    "risk": {
+      "cad": 0.9783,
+      "lad": 0.9883,
+      "lcx": 0.6461,
+      "rca": 0.8145
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 47,
+    "risk": {
+      "cad": 0.9814,
+      "lad": 0.9741,
+      "lcx": 0.3217,
+      "rca": 0.0342
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 48,
+    "risk": {
+      "cad": 0.9962,
+      "lad": 0.975,
+      "lcx": 0.7981,
+      "rca": 0.9643
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 49,
+    "risk": {
+      "cad": 0.0218,
+      "lad": 0.0149,
+      "lcx": 0.0193,
+      "rca": 0.0719
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 50,
+    "risk": {
+      "cad": 0.8973,
+      "lad": 0.0178,
+      "lcx": 0.3552,
+      "rca": 0.4594
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 51,
+    "risk": {
+      "cad": 0.7704,
+      "lad": 0.0345,
+      "lcx": 0.8489,
+      "rca": 0.28
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 52,
+    "risk": {
+      "cad": 0.9925,
+      "lad": 0.9232,
+      "lcx": 0.8174,
+      "rca": 0.2965
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 53,
+    "risk": {
+      "cad": 0.9904,
+      "lad": 0.9875,
+      "lcx": 0.3294,
+      "rca": 0.2961
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 54,
+    "risk": {
+      "cad": 0.8628,
+      "lad": 0.0737,
+      "lcx": 0.1216,
+      "rca": 0.43
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 55,
+    "risk": {
+      "cad": 0.0778,
+      "lad": 0.0071,
+      "lcx": 0.0622,
+      "rca": 0.0331
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 56,
+    "risk": {
+      "cad": 0.9967,
+      "lad": 0.9841,
+      "lcx": 0.6839,
+      "rca": 0.5826
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 57,
+    "risk": {
+      "cad": 0.9742,
+      "lad": 0.9691,
+      "lcx": 0.7041,
+      "rca": 0.6069
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 58,
+    "risk": {
+      "cad": 0.9934,
+      "lad": 0.9858,
+      "lcx": 0.7594,
+      "rca": 0.6287
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 59,
+    "risk": {
+      "cad": 0.6723,
+      "lad": 0.9015,
+      "lcx": 0.5093,
+      "rca": 0.6956
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 60,
+    "risk": {
+      "cad": 0.9951,
+      "lad": 0.9908,
+      "lcx": 0.8248,
+      "rca": 0.7484
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 61,
+    "risk": {
+      "cad": 0.0578,
+      "lad": 0.0244,
+      "lcx": 0.0942,
+      "rca": 0.1483
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 62,
+    "risk": {
+      "cad": 0.8349,
+      "lad": 0.9725,
+      "lcx": 0.1118,
+      "rca": 0.5781
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 63,
+    "risk": {
+      "cad": 0.5887,
+      "lad": 0.8648,
+      "lcx": 0.1207,
+      "rca": 0.7712
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 64,
+    "risk": {
+      "cad": 0.9186,
+      "lad": 0.9683,
+      "lcx": 0.7585,
+      "rca": 0.8295
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 65,
+    "risk": {
+      "cad": 0.1493,
+      "lad": 0.0083,
+      "lcx": 0.0562,
+      "rca": 0.1626
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 66,
+    "risk": {
+      "cad": 0.9716,
+      "lad": 0.0933,
+      "lcx": 0.5068,
+      "rca": 0.3426
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 67,
+    "risk": {
+      "cad": 0.9931,
+      "lad": 0.9833,
+      "lcx": 0.163,
+      "rca": 0.4669
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 68,
+    "risk": {
+      "cad": 0.4745,
+      "lad": 0.0992,
+      "lcx": 0.2793,
+      "rca": 0.0612
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 69,
+    "risk": {
+      "cad": 0.1172,
+      "lad": 0.0303,
+      "lcx": 0.0641,
+      "rca": 0.0602
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 70,
+    "risk": {
+      "cad": 0.9725,
+      "lad": 0.9908,
+      "lcx": 0.7071,
+      "rca": 0.6582
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 71,
+    "risk": {
+      "cad": 0.0871,
+      "lad": 0.0131,
+      "lcx": 0.1643,
+      "rca": 0.1485
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 72,
+    "risk": {
+      "cad": 0.9897,
+      "lad": 0.9725,
+      "lcx": 0.8478,
+      "rca": 0.7611
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 73,
+    "risk": {
+      "cad": 0.9841,
+      "lad": 0.975,
+      "lcx": 0.1678,
+      "rca": 0.4287
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 74,
+    "risk": {
+      "cad": 0.8944,
+      "lad": 0.041,
+      "lcx": 0.1221,
+      "rca": 0.9049
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 75,
+    "risk": {
+      "cad": 0.9978,
+      "lad": 0.9875,
+      "lcx": 0.9032,
+      "rca": 0.6565
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 76,
+    "risk": {
+      "cad": 0.8421,
+      "lad": 0.9608,
+      "lcx": 0.204,
+      "rca": 0.2644
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 77,
+    "risk": {
+      "cad": 0.9875,
+      "lad": 0.9574,
+      "lcx": 0.4196,
+      "rca": 0.5095
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 78,
+    "risk": {
+      "cad": 0.948,
+      "lad": 0.0315,
+      "lcx": 0.7969,
+      "rca": 0.3102
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 79,
+    "risk": {
+      "cad": 0.8957,
+      "lad": 0.975,
+      "lcx": 0.5565,
+      "rca": 0.1585
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 80,
+    "risk": {
+      "cad": 0.0549,
+      "lad": 0.0036,
+      "lcx": 0.1279,
+      "rca": 0.167
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 81,
+    "risk": {
+      "cad": 0.9927,
+      "lad": 0.9875,
+      "lcx": 0.8706,
+      "rca": 0.9091
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 82,
+    "risk": {
+      "cad": 0.9976,
+      "lad": 0.9942,
+      "lcx": 0.297,
+      "rca": 0.4574
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 83,
+    "risk": {
+      "cad": 0.8956,
+      "lad": 0.9825,
+      "lcx": 0.8334,
+      "rca": 0.5317
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 84,
+    "risk": {
+      "cad": 0.8301,
+      "lad": 0.9449,
+      "lcx": 0.2108,
+      "rca": 0.192
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 85,
+    "risk": {
+      "cad": 0.9818,
+      "lad": 0.0855,
+      "lcx": 0.2161,
+      "rca": 0.9633
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 86,
+    "risk": {
+      "cad": 0.8563,
+      "lad": 0.0558,
+      "lcx": 0.6948,
+      "rca": 0.0782
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 87,
+    "risk": {
+      "cad": 0.9786,
+      "lad": 0.9583,
+      "lcx": 0.6998,
+      "rca": 0.9673
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 88,
+    "risk": {
+      "cad": 0.9852,
+      "lad": 0.9825,
+      "lcx": 0.6452,
+      "rca": 0.7951
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 89,
+    "risk": {
+      "cad": 0.9809,
+      "lad": 0.0903,
+      "lcx": 0.8358,
+      "rca": 0.8524
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 90,
+    "risk": {
+      "cad": 0.9963,
+      "lad": 0.99,
+      "lcx": 0.8269,
+      "rca": 0.7534
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 91,
+    "risk": {
+      "cad": 0.7312,
+      "lad": 0.0671,
+      "lcx": 0.7514,
+      "rca": 0.6654
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 92,
+    "risk": {
+      "cad": 0.0858,
+      "lad": 0.0416,
+      "lcx": 0.1547,
+      "rca": 0.1204
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 93,
+    "risk": {
+      "cad": 0.996,
+      "lad": 0.9574,
+      "lcx": 0.8447,
+      "rca": 0.9608
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 94,
+    "risk": {
+      "cad": 0.7673,
+      "lad": 0.9725,
+      "lcx": 0.4521,
+      "rca": 0.8079
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 95,
+    "risk": {
+      "cad": 0.9904,
+      "lad": 0.9875,
+      "lcx": 0.1413,
+      "rca": 0.5636
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 96,
+    "risk": {
+      "cad": 0.9878,
+      "lad": 0.9942,
+      "lcx": 0.612,
+      "rca": 0.2857
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 97,
+    "risk": {
+      "cad": 0.9798,
+      "lad": 0.97,
+      "lcx": 0.8392,
+      "rca": 0.5728
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 98,
+    "risk": {
+      "cad": 0.9667,
+      "lad": 0.9499,
+      "lcx": 0.8503,
+      "rca": 0.6046
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 99,
+    "risk": {
+      "cad": 0.9921,
+      "lad": 0.9791,
+      "lcx": 0.8886,
+      "rca": 0.4646
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 100,
+    "risk": {
+      "cad": 0.7925,
+      "lad": 0.9691,
+      "lcx": 0.0723,
+      "rca": 0.0389
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 101,
+    "risk": {
+      "cad": 0.9966,
+      "lad": 0.9716,
+      "lcx": 0.4998,
+      "rca": 0.4263
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 102,
+    "risk": {
+      "cad": 0.9964,
+      "lad": 0.9858,
+      "lcx": 0.9524,
+      "rca": 0.9162
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 103,
+    "risk": {
+      "cad": 0.078,
+      "lad": 0.0238,
+      "lcx": 0.0772,
+      "rca": 0.1443
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 104,
+    "risk": {
+      "cad": 0.9868,
+      "lad": 0.9775,
+      "lcx": 0.6325,
+      "rca": 0.448
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 105,
+    "risk": {
+      "cad": 0.8754,
+      "lad": 0.057,
+      "lcx": 0.6489,
+      "rca": 0.4599
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 106,
+    "risk": {
+      "cad": 0.9052,
+      "lad": 0.98,
+      "lcx": 0.038,
+      "rca": 0.6327
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 107,
+    "risk": {
+      "cad": 0.9732,
+      "lad": 0.9791,
+      "lcx": 0.4635,
+      "rca": 0.2168
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 108,
+    "risk": {
+      "cad": 0.9442,
+      "lad": 0.9758,
+      "lcx": 0.7289,
+      "rca": 0.5639
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 109,
+    "risk": {
+      "cad": 0.1802,
+      "lad": 0.0333,
+      "lcx": 0.1796,
+      "rca": 0.0716
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 110,
+    "risk": {
+      "cad": 0.995,
+      "lad": 0.0362,
+      "lcx": 0.7756,
+      "rca": 0.7434
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 111,
+    "risk": {
+      "cad": 0.8225,
+      "lad": 0.041,
+      "lcx": 0.5775,
+      "rca": 0.2657
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 112,
+    "risk": {
+      "cad": 0.9715,
+      "lad": 0.9808,
+      "lcx": 0.8403,
+      "rca": 0.2337
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 113,
+    "risk": {
+      "cad": 0.9695,
+      "lad": 0.1087,
+      "lcx": 0.7732,
+      "rca": 0.8897
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 114,
+    "risk": {
+      "cad": 0.0145,
+      "lad": 0.0077,
+      "lcx": 0.0442,
+      "rca": 0.0799
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 115,
+    "risk": {
+      "cad": 0.9968,
+      "lad": 0.995,
+      "lcx": 0.9431,
+      "rca": 0.9741
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 116,
+    "risk": {
+      "cad": 0.9599,
+      "lad": 0.0612,
+      "lcx": 0.7616,
+      "rca": 0.7045
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 117,
+    "risk": {
+      "cad": 0.9767,
+      "lad": 0.9666,
+      "lcx": 0.1633,
+      "rca": 0.2959
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 118,
+    "risk": {
+      "cad": 0.9939,
+      "lad": 0.9708,
+      "lcx": 0.8718,
+      "rca": 0.7118
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 119,
+    "risk": {
+      "cad": 0.99,
+      "lad": 0.9416,
+      "lcx": 0.2783,
+      "rca": 0.4669
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 120,
+    "risk": {
+      "cad": 0.9158,
+      "lad": 0.9816,
+      "lcx": 0.7857,
+      "rca": 0.6121
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 121,
+    "risk": {
+      "cad": 0.9541,
+      "lad": 0.9416,
+      "lcx": 0.7472,
+      "rca": 0.5213
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 122,
+    "risk": {
+      "cad": 0.9359,
+      "lad": 0.0303,
+      "lcx": 0.1848,
+      "rca": 0.8461
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 123,
+    "risk": {
+      "cad": 0.9598,
+      "lad": 0.0624,
+      "lcx": 0.8722,
+      "rca": 0.1695
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 124,
+    "risk": {
+      "cad": 0.8761,
+      "lad": 0.9708,
+      "lcx": 0.7459,
+      "rca": 0.223
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 125,
+    "risk": {
+      "cad": 0.9341,
+      "lad": 0.9499,
+      "lcx": 0.1369,
+      "rca": 0.0203
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 126,
+    "risk": {
+      "cad": 0.9683,
+      "lad": 0.9741,
+      "lcx": 0.6936,
+      "rca": 0.4776
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 127,
+    "risk": {
+      "cad": 0.9321,
+      "lad": 0.9925,
+      "lcx": 0.2043,
+      "rca": 0.8919
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 128,
+    "risk": {
+      "cad": 0.9781,
+      "lad": 0.9933,
+      "lcx": 0.3011,
+      "rca": 0.7187
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 129,
+    "risk": {
+      "cad": 0.9206,
+      "lad": 0.9491,
+      "lcx": 0.095,
+      "rca": 0.3014
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 130,
+    "risk": {
+      "cad": 0.119,
+      "lad": 0.0042,
+      "lcx": 0.0254,
+      "rca": 0.1359
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 131,
+    "risk": {
+      "cad": 0.1341,
+      "lad": 0.0481,
+      "lcx": 0.0974,
+      "rca": 0.0468
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 132,
+    "risk": {
+      "cad": 0.996,
+      "lad": 0.985,
+      "lcx": 0.2466,
+      "rca": 0.6175
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 133,
+    "risk": {
+      "cad": 0.9787,
+      "lad": 0.9917,
+      "lcx": 0.3227,
+      "rca": 0.5869
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 134,
+    "risk": {
+      "cad": 0.2256,
+      "lad": 0.0499,
+      "lcx": 0.1302,
+      "rca": 0.5024
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 135,
+    "risk": {
+      "cad": 0.9583,
+      "lad": 0.9675,
+      "lcx": 0.1282,
+      "rca": 0.7878
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 136,
+    "risk": {
+      "cad": 0.9471,
+      "lad": 0.9599,
+      "lcx": 0.1392,
+      "rca": 0.8532
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 137,
+    "risk": {
+      "cad": 0.0975,
+      "lad": 0.0143,
+      "lcx": 0.0484,
+      "rca": 0.0805
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 138,
+    "risk": {
+      "cad": 0.0641,
+      "lad": 0.0327,
+      "lcx": 0.049,
+      "rca": 0.3459
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 139,
+    "risk": {
+      "cad": 0.9736,
+      "lad": 0.9624,
+      "lcx": 0.7631,
+      "rca": 0.9482
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 140,
+    "risk": {
+      "cad": 0.992,
+      "lad": 0.9675,
+      "lcx": 0.5274,
+      "rca": 0.9428
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 141,
+    "risk": {
+      "cad": 0.9667,
+      "lad": 0.9741,
+      "lcx": 0.0912,
+      "rca": 0.0621
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 142,
+    "risk": {
+      "cad": 0.9911,
+      "lad": 0.9658,
+      "lcx": 0.1609,
+      "rca": 0.6251
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 143,
+    "risk": {
+      "cad": 0.7619,
+      "lad": 0.7922,
+      "lcx": 0.3404,
+      "rca": 0.0143
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 144,
+    "risk": {
+      "cad": 0.0101,
+      "lad": 0.0059,
+      "lcx": 0.0416,
+      "rca": 0.0167
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 145,
+    "risk": {
+      "cad": 0.9835,
+      "lad": 0.9833,
+      "lcx": 0.5527,
+      "rca": 0.9162
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 146,
+    "risk": {
+      "cad": 0.9758,
+      "lad": 0.0244,
+      "lcx": 0.825,
+      "rca": 0.6908
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 147,
+    "risk": {
+      "cad": 0.9978,
+      "lad": 0.9967,
+      "lcx": 0.5244,
+      "rca": 0.8284
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 148,
+    "risk": {
+      "cad": 0.9144,
+      "lad": 0.9608,
+      "lcx": 0.4589,
+      "rca": 0.9792
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 149,
+    "risk": {
+      "cad": 0.9709,
+      "lad": 0.9257,
+      "lcx": 0.7452,
+      "rca": 0.7377
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 150,
+    "risk": {
+      "cad": 0.9812,
+      "lad": 0.9733,
+      "lcx": 0.5927,
+      "rca": 0.8395
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 151,
+    "risk": {
+      "cad": 0.208,
+      "lad": 0.0261,
+      "lcx": 0.207,
+      "rca": 0.2365
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 152,
+    "risk": {
+      "cad": 0.1748,
+      "lad": 0.0291,
+      "lcx": 0.1723,
+      "rca": 0.0878
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 153,
+    "risk": {
+      "cad": 0.8005,
+      "lad": 0.9516,
+      "lcx": 0.1506,
+      "rca": 0.074
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 154,
+    "risk": {
+      "cad": 0.3157,
+      "lad": 0.044,
+      "lcx": 0.1152,
+      "rca": 0.2689
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 155,
+    "risk": {
+      "cad": 0.9288,
+      "lad": 0.0873,
+      "lcx": 0.1632,
+      "rca": 0.3843
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 156,
+    "risk": {
+      "cad": 0.9902,
+      "lad": 0.9841,
+      "lcx": 0.7746,
+      "rca": 0.8739
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 157,
+    "risk": {
+      "cad": 0.9613,
+      "lad": 0.9574,
+      "lcx": 0.7143,
+      "rca": 0.8343
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 158,
+    "risk": {
+      "cad": 0.9711,
+      "lad": 0.8765,
+      "lcx": 0.5922,
+      "rca": 0.2649
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 159,
+    "risk": {
+      "cad": 0.7442,
+      "lad": 0.0368,
+      "lcx": 0.8568,
+      "rca": 0.204
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 160,
+    "risk": {
+      "cad": 0.9957,
+      "lad": 0.9841,
+      "lcx": 0.3193,
+      "rca": 0.8745
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 161,
+    "risk": {
+      "cad": 0.9635,
+      "lad": 0.0802,
+      "lcx": 0.1277,
+      "rca": 0.8419
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 162,
+    "risk": {
+      "cad": 0.9943,
+      "lad": 0.9766,
+      "lcx": 0.5706,
+      "rca": 0.407
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 163,
+    "risk": {
+      "cad": 0.9887,
+      "lad": 0.98,
+      "lcx": 0.1153,
+      "rca": 0.6567
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 164,
+    "risk": {
+      "cad": 0.9059,
+      "lad": 0.9791,
+      "lcx": 0.8576,
+      "rca": 0.4238
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 165,
+    "risk": {
+      "cad": 0.9957,
+      "lad": 0.9716,
+      "lcx": 0.9452,
+      "rca": 0.9061
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 166,
+    "risk": {
+      "cad": 0.9534,
+      "lad": 0.9074,
+      "lcx": 0.3276,
+      "rca": 0.3052
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 167,
+    "risk": {
+      "cad": 0.0168,
+      "lad": 0.0137,
+      "lcx": 0.0701,
+      "rca": 0.01
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 168,
+    "risk": {
+      "cad": 0.9658,
+      "lad": 0.9608,
+      "lcx": 0.6381,
+      "rca": 0.1426
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 169,
+    "risk": {
+      "cad": 0.0664,
+      "lad": 0.0238,
+      "lcx": 0.0266,
+      "rca": 0.0762
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 170,
+    "risk": {
+      "cad": 0.0836,
+      "lad": 0.0131,
+      "lcx": 0.0761,
+      "rca": 0.036
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 171,
+    "risk": {
+      "cad": 0.0618,
+      "lad": 0.0208,
+      "lcx": 0.0783,
+      "rca": 0.2888
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 172,
+    "risk": {
+      "cad": 0.9751,
+      "lad": 0.9566,
+      "lcx": 0.1325,
+      "rca": 0.4162
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 173,
+    "risk": {
+      "cad": 0.9761,
+      "lad": 0.9449,
+      "lcx": 0.1441,
+      "rca": 0.442
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 174,
+    "risk": {
+      "cad": 0.9952,
+      "lad": 0.9725,
+      "lcx": 0.8239,
+      "rca": 0.8541
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 175,
+    "risk": {
+      "cad": 0.9996,
+      "lad": 0.985,
+      "lcx": 0.8461,
+      "rca": 0.9693
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 176,
+    "risk": {
+      "cad": 0.3178,
+      "lad": 0.0279,
+      "lcx": 0.2193,
+      "rca": 0.5127
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 177,
+    "risk": {
+      "cad": 0.6184,
+      "lad": 0.9007,
+      "lcx": 0.0791,
+      "rca": 0.2258
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 178,
+    "risk": {
+      "cad": 0.9867,
+      "lad": 0.975,
+      "lcx": 0.846,
+      "rca": 0.833
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 179,
+    "risk": {
+      "cad": 0.8529,
+      "lad": 0.9666,
+      "lcx": 0.7695,
+      "rca": 0.1788
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 180,
+    "risk": {
+      "cad": 0.0297,
+      "lad": 0.0196,
+      "lcx": 0.184,
+      "rca": 0.2597
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 181,
+    "risk": {
+      "cad": 0.6155,
+      "lad": 0.8398,
+      "lcx": 0.2456,
+      "rca": 0.3314
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 182,
+    "risk": {
+      "cad": 0.9903,
+      "lad": 0.9733,
+      "lcx": 0.8803,
+      "rca": 0.5297
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 183,
+    "risk": {
+      "cad": 0.7737,
+      "lad": 0.9324,
+      "lcx": 0.6409,
+      "rca": 0.7335
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 184,
+    "risk": {
+      "cad": 0.2487,
+      "lad": 0.0725,
+      "lcx": 0.1983,
+      "rca": 0.1642
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 185,
+    "risk": {
+      "cad": 0.9249,
+      "lad": 0.9883,
+      "lcx": 0.5658,
+      "rca": 0.3085
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 186,
+    "risk": {
+      "cad": 0.2504,
+      "lad": 0.0463,
+      "lcx": 0.1251,
+      "rca": 0.0847
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 187,
+    "risk": {
+      "cad": 0.274,
+      "lad": 0.0511,
+      "lcx": 0.2153,
+      "rca": 0.1445
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 188,
+    "risk": {
+      "cad": 0.9912,
+      "lad": 0.9666,
+      "lcx": 0.7233,
+      "rca": 0.4184
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 189,
+    "risk": {
+      "cad": 0.8877,
+      "lad": 0.9391,
+      "lcx": 0.0625,
+      "rca": 0.0895
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 190,
+    "risk": {
+      "cad": 0.9411,
+      "lad": 0.9541,
+      "lcx": 0.7131,
+      "rca": 0.5402
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 191,
+    "risk": {
+      "cad": 0.2988,
+      "lad": 0.0552,
+      "lcx": 0.1193,
+      "rca": 0.052
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 192,
+    "risk": {
+      "cad": 0.9876,
+      "lad": 0.9825,
+      "lcx": 0.1974,
+      "rca": 0.7093
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 193,
+    "risk": {
+      "cad": 0.0128,
+      "lad": 0.0077,
+      "lcx": 0.0214,
+      "rca": 0.0371
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 194,
+    "risk": {
+      "cad": 0.2941,
+      "lad": 0.0214,
+      "lcx": 0.0815,
+      "rca": 0.1211
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 195,
+    "risk": {
+      "cad": 0.0606,
+      "lad": 0.0095,
+      "lcx": 0.0682,
+      "rca": 0.0152
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 196,
+    "risk": {
+      "cad": 0.9897,
+      "lad": 0.0659,
+      "lcx": 0.2482,
+      "rca": 0.7849
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 197,
+    "risk": {
+      "cad": 0.0457,
+      "lad": 0.0244,
+      "lcx": 0.1105,
+      "rca": 0.0537
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 198,
+    "risk": {
+      "cad": 0.9928,
+      "lad": 0.9766,
+      "lcx": 0.7722,
+      "rca": 0.9303
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 199,
+    "risk": {
+      "cad": 0.9591,
+      "lad": 0.9758,
+      "lcx": 0.4562,
+      "rca": 0.372
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 200,
+    "risk": {
+      "cad": 0.1482,
+      "lad": 0.0279,
+      "lcx": 0.071,
+      "rca": 0.0859
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 201,
+    "risk": {
+      "cad": 0.9629,
+      "lad": 0.9441,
+      "lcx": 0.201,
+      "rca": 0.2775
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 202,
+    "risk": {
+      "cad": 0.1885,
+      "lad": 0.0416,
+      "lcx": 0.187,
+      "rca": 0.414
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 203,
+    "risk": {
+      "cad": 0.9832,
+      "lad": 0.9833,
+      "lcx": 0.8875,
+      "rca": 0.7457
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 204,
+    "risk": {
+      "cad": 0.1046,
+      "lad": 0.0125,
+      "lcx": 0.0664,
+      "rca": 0.416
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 205,
+    "risk": {
+      "cad": 0.0829,
+      "lad": 0.0416,
+      "lcx": 0.0761,
+      "rca": 0.1134
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 206,
+    "risk": {
+      "cad": 0.706,
+      "lad": 0.0517,
+      "lcx": 0.1097,
+      "rca": 0.388
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 207,
+    "risk": {
+      "cad": 0.9808,
+      "lad": 0.9374,
+      "lcx": 0.6647,
+      "rca": 0.7725
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 208,
+    "risk": {
+      "cad": 0.9729,
+      "lad": 0.9449,
+      "lcx": 0.1394,
+      "rca": 0.6428
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 209,
+    "risk": {
+      "cad": 0.9556,
+      "lad": 0.9783,
+      "lcx": 0.1435,
+      "rca": 0.7344
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 210,
+    "risk": {
+      "cad": 0.9913,
+      "lad": 0.9825,
+      "lcx": 0.5348,
+      "rca": 0.728
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 211,
+    "risk": {
+      "cad": 0.0552,
+      "lad": 0.016,
+      "lcx": 0.1048,
+      "rca": 0.142
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 212,
+    "risk": {
+      "cad": 0.912,
+      "lad": 0.965,
+      "lcx": 0.1546,
+      "rca": 0.8541
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 213,
+    "risk": {
+      "cad": 0.0215,
+      "lad": 0.0089,
+      "lcx": 0.0447,
+      "rca": 0.0683
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 214,
+    "risk": {
+      "cad": 0.5217,
+      "lad": 0.0606,
+      "lcx": 0.4318,
+      "rca": 0.6827
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 215,
+    "risk": {
+      "cad": 0.5093,
+      "lad": 0.0968,
+      "lcx": 0.2972,
+      "rca": 0.524
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 216,
+    "risk": {
+      "cad": 0.993,
+      "lad": 0.9825,
+      "lcx": 0.3197,
+      "rca": 0.9255
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 217,
+    "risk": {
+      "cad": 0.2983,
+      "lad": 0.0457,
+      "lcx": 0.2873,
+      "rca": 0.2795
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 218,
+    "risk": {
+      "cad": 0.2297,
+      "lad": 0.0386,
+      "lcx": 0.1909,
+      "rca": 0.2578
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 219,
+    "risk": {
+      "cad": 0.0794,
+      "lad": 0.0356,
+      "lcx": 0.0818,
+      "rca": 0.1042
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 220,
+    "risk": {
+      "cad": 0.5653,
+      "lad": 0.8356,
+      "lcx": 0.4361,
+      "rca": 0.1648
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 221,
+    "risk": {
+      "cad": 0.9545,
+      "lad": 0.975,
+      "lcx": 0.7673,
+      "rca": 0.9573
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 222,
+    "risk": {
+      "cad": 0.8981,
+      "lad": 0.9249,
+      "lcx": 0.7019,
+      "rca": 0.0524
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 223,
+    "risk": {
+      "cad": 0.9883,
+      "lad": 0.9658,
+      "lcx": 0.7345,
+      "rca": 0.744
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 224,
+    "risk": {
+      "cad": 0.9505,
+      "lad": 0.9675,
+      "lcx": 0.4508,
+      "rca": 0.4858
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 225,
+    "risk": {
+      "cad": 0.9923,
+      "lad": 0.98,
+      "lcx": 0.2689,
+      "rca": 0.3781
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 226,
+    "risk": {
+      "cad": 0.9468,
+      "lad": 0.0659,
+      "lcx": 0.1714,
+      "rca": 0.5031
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 227,
+    "risk": {
+      "cad": 0.9937,
+      "lad": 0.9716,
+      "lcx": 0.5704,
+      "rca": 0.8063
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 228,
+    "risk": {
+      "cad": 0.9601,
+      "lad": 0.9658,
+      "lcx": 0.4753,
+      "rca": 0.4174
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 229,
+    "risk": {
+      "cad": 0.9446,
+      "lad": 0.965,
+      "lcx": 0.1508,
+      "rca": 0.579
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 230,
+    "risk": {
+      "cad": 0.9726,
+      "lad": 0.9775,
+      "lcx": 0.5769,
+      "rca": 0.4165
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 231,
+    "risk": {
+      "cad": 0.9986,
+      "lad": 0.9917,
+      "lcx": 0.5942,
+      "rca": 0.6838
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 232,
+    "risk": {
+      "cad": 0.9955,
+      "lad": 0.0517,
+      "lcx": 0.3719,
+      "rca": 0.9684
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 233,
+    "risk": {
+      "cad": 0.961,
+      "lad": 0.9658,
+      "lcx": 0.5483,
+      "rca": 0.4581
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 234,
+    "risk": {
+      "cad": 0.2412,
+      "lad": 0.0172,
+      "lcx": 0.21,
+      "rca": 0.1069
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 235,
+    "risk": {
+      "cad": 0.0785,
+      "lad": 0.025,
+      "lcx": 0.1705,
+      "rca": 0.5048
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 236,
+    "risk": {
+      "cad": 0.982,
+      "lad": 0.9708,
+      "lcx": 0.8226,
+      "rca": 0.5091
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 237,
+    "risk": {
+      "cad": 0.967,
+      "lad": 0.9716,
+      "lcx": 0.5231,
+      "rca": 0.5635
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 238,
+    "risk": {
+      "cad": 0.81,
+      "lad": 0.9516,
+      "lcx": 0.1792,
+      "rca": 0.2338
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 239,
+    "risk": {
+      "cad": 0.6691,
+      "lad": 0.8473,
+      "lcx": 0.1338,
+      "rca": 0.1826
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 240,
+    "risk": {
+      "cad": 0.9853,
+      "lad": 0.9641,
+      "lcx": 0.1917,
+      "rca": 0.1314
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 241,
+    "risk": {
+      "cad": 0.9947,
+      "lad": 0.985,
+      "lcx": 0.5717,
+      "rca": 0.9664
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 242,
+    "risk": {
+      "cad": 0.8198,
+      "lad": 0.8782,
+      "lcx": 0.7967,
+      "rca": 0.4906
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 243,
+    "risk": {
+      "cad": 0.9687,
+      "lad": 0.9291,
+      "lcx": 0.261,
+      "rca": 0.593
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 244,
+    "risk": {
+      "cad": 0.9589,
+      "lad": 0.0838,
+      "lcx": 0.0759,
+      "rca": 0.4252
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 245,
+    "risk": {
+      "cad": 0.8666,
+      "lad": 0.9516,
+      "lcx": 0.722,
+      "rca": 0.79
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 246,
+    "risk": {
+      "cad": 0.8652,
+      "lad": 0.9491,
+      "lcx": 0.7669,
+      "rca": 0.4332
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 247,
+    "risk": {
+      "cad": 0.9962,
+      "lad": 0.9633,
+      "lcx": 0.8043,
+      "rca": 0.8369
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 248,
+    "risk": {
+      "cad": 0.0214,
+      "lad": 0.0089,
+      "lcx": 0.0135,
+      "rca": 0.0589
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 249,
+    "risk": {
+      "cad": 0.9975,
+      "lad": 0.99,
+      "lcx": 0.9377,
+      "rca": 0.9779
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 250,
+    "risk": {
+      "cad": 0.9877,
+      "lad": 0.985,
+      "lcx": 0.8385,
+      "rca": 0.8461
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 251,
+    "risk": {
+      "cad": 0.9901,
+      "lad": 0.9182,
+      "lcx": 0.4005,
+      "rca": 0.9065
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 252,
+    "risk": {
+      "cad": 0.8218,
+      "lad": 0.8957,
+      "lcx": 0.0673,
+      "rca": 0.03
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 253,
+    "risk": {
+      "cad": 0.9661,
+      "lad": 0.9808,
+      "lcx": 0.162,
+      "rca": 0.6918
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 254,
+    "risk": {
+      "cad": 0.9343,
+      "lad": 0.9332,
+      "lcx": 0.2878,
+      "rca": 0.3598
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 255,
+    "risk": {
+      "cad": 0.2583,
+      "lad": 0.0469,
+      "lcx": 0.1727,
+      "rca": 0.4705
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 256,
+    "risk": {
+      "cad": 0.0666,
+      "lad": 0.0071,
+      "lcx": 0.0417,
+      "rca": 0.0051
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 257,
+    "risk": {
+      "cad": 0.0573,
+      "lad": 0.0083,
+      "lcx": 0.0651,
+      "rca": 0.3205
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 258,
+    "risk": {
+      "cad": 0.0346,
+      "lad": 0.0036,
+      "lcx": 0.0515,
+      "rca": 0.0994
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 259,
+    "risk": {
+      "cad": 0.0496,
+      "lad": 0.0184,
+      "lcx": 0.2141,
+      "rca": 0.2065
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 260,
+    "risk": {
+      "cad": 0.9367,
+      "lad": 0.9624,
+      "lcx": 0.1235,
+      "rca": 0.6687
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 261,
+    "risk": {
+      "cad": 0.9953,
+      "lad": 0.9841,
+      "lcx": 0.7621,
+      "rca": 0.9819
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 262,
+    "risk": {
+      "cad": 0.0114,
+      "lad": 0.0131,
+      "lcx": 0.057,
+      "rca": 0.1713
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 263,
+    "risk": {
+      "cad": 0.814,
+      "lad": 0.914,
+      "lcx": 0.1128,
+      "rca": 0.2019
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 264,
+    "risk": {
+      "cad": 0.0047,
+      "lad": 0.0196,
+      "lcx": 0.0132,
+      "rca": 0.046
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 265,
+    "risk": {
+      "cad": 0.0179,
+      "lad": 0.0178,
+      "lcx": 0.0664,
+      "rca": 0.0485
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 266,
+    "risk": {
+      "cad": 0.9148,
+      "lad": 0.085,
+      "lcx": 0.643,
+      "rca": 0.4178
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 267,
+    "risk": {
+      "cad": 0.95,
+      "lad": 0.0933,
+      "lcx": 0.6261,
+      "rca": 0.6509
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 268,
+    "risk": {
+      "cad": 0.9721,
+      "lad": 0.9316,
+      "lcx": 0.7651,
+      "rca": 0.5215
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 269,
+    "risk": {
+      "cad": 0.1279,
+      "lad": 0.019,
+      "lcx": 0.0357,
+      "rca": 0.0163
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 270,
+    "risk": {
+      "cad": 0.9847,
+      "lad": 0.9725,
+      "lcx": 0.261,
+      "rca": 0.2421
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 271,
+    "risk": {
+      "cad": 0.0239,
+      "lad": 0.0059,
+      "lcx": 0.0147,
+      "rca": 0.032
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 272,
+    "risk": {
+      "cad": 0.9856,
+      "lad": 0.9733,
+      "lcx": 0.1781,
+      "rca": 0.5998
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 273,
+    "risk": {
+      "cad": 0.2286,
+      "lad": 0.0493,
+      "lcx": 0.1947,
+      "rca": 0.3212
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 274,
+    "risk": {
+      "cad": 0.9909,
+      "lad": 0.975,
+      "lcx": 0.8262,
+      "rca": 0.9785
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 275,
+    "risk": {
+      "cad": 0.9976,
+      "lad": 0.9758,
+      "lcx": 0.3762,
+      "rca": 0.5613
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 276,
+    "risk": {
+      "cad": 0.9916,
+      "lad": 0.9524,
+      "lcx": 0.1419,
+      "rca": 0.6318
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 277,
+    "risk": {
+      "cad": 0.1654,
+      "lad": 0.022,
+      "lcx": 0.0996,
+      "rca": 0.0547
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 278,
+    "risk": {
+      "cad": 0.9922,
+      "lad": 0.9908,
+      "lcx": 0.1042,
+      "rca": 0.5198
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 279,
+    "risk": {
+      "cad": 0.9938,
+      "lad": 0.0315,
+      "lcx": 0.2532,
+      "rca": 0.6333
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 280,
+    "risk": {
+      "cad": 0.962,
+      "lad": 0.0832,
+      "lcx": 0.746,
+      "rca": 0.595
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 281,
+    "risk": {
+      "cad": 0.2309,
+      "lad": 0.0434,
+      "lcx": 0.1036,
+      "rca": 0.5836
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 282,
+    "risk": {
+      "cad": 0.9359,
+      "lad": 0.9666,
+      "lcx": 0.7337,
+      "rca": 0.6838
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 283,
+    "risk": {
+      "cad": 0.9775,
+      "lad": 0.1147,
+      "lcx": 0.2331,
+      "rca": 0.7349
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 284,
+    "risk": {
+      "cad": 0.961,
+      "lad": 0.0535,
+      "lcx": 0.0951,
+      "rca": 0.7224
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 285,
+    "risk": {
+      "cad": 0.3639,
+      "lad": 0.0238,
+      "lcx": 0.4309,
+      "rca": 0.1391
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 286,
+    "risk": {
+      "cad": 0.1145,
+      "lad": 0.0059,
+      "lcx": 0.0581,
+      "rca": 0.1089
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 287,
+    "risk": {
+      "cad": 0.0578,
+      "lad": 0.0303,
+      "lcx": 0.29,
+      "rca": 0.1567
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 288,
+    "risk": {
+      "cad": 0.2986,
+      "lad": 0.035,
+      "lcx": 0.1082,
+      "rca": 0.0264
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 289,
+    "risk": {
+      "cad": 0.8697,
+      "lad": 0.0131,
+      "lcx": 0.4866,
+      "rca": 0.126
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 290,
+    "risk": {
+      "cad": 0.0166,
+      "lad": 0.0238,
+      "lcx": 0.0832,
+      "rca": 0.0445
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 291,
+    "risk": {
+      "cad": 0.0292,
+      "lad": 0.0529,
+      "lcx": 0.0506,
+      "rca": 0.2083
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 292,
+    "risk": {
+      "cad": 0.1895,
+      "lad": 0.0267,
+      "lcx": 0.0353,
+      "rca": 0.1331
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 293,
+    "risk": {
+      "cad": 0.2516,
+      "lad": 0.0451,
+      "lcx": 0.2308,
+      "rca": 0.4549
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 294,
+    "risk": {
+      "cad": 0.0581,
+      "lad": 0.0143,
+      "lcx": 0.085,
+      "rca": 0.4123
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 295,
+    "risk": {
+      "cad": 0.9584,
+      "lad": 0.9574,
+      "lcx": 0.5818,
+      "rca": 0.9466
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 296,
+    "risk": {
+      "cad": 0.3031,
+      "lad": 0.0226,
+      "lcx": 0.1715,
+      "rca": 0.0137
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 297,
+    "risk": {
+      "cad": 0.1233,
+      "lad": 0.0267,
+      "lcx": 0.1658,
+      "rca": 0.0138
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 298,
+    "risk": {
+      "cad": 0.1554,
+      "lad": 0.0511,
+      "lcx": 0.0578,
+      "rca": 0.134
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 299,
+    "risk": {
+      "cad": 0.9548,
+      "lad": 0.9516,
+      "lcx": 0.6658,
+      "rca": 0.5114
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 1,
+      "rca": 1
+    }
+  },
+  {
+    "patient_id": 300,
+    "risk": {
+      "cad": 0.016,
+      "lad": 0.0202,
+      "lcx": 0.0118,
+      "rca": 0.0058
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 301,
+    "risk": {
+      "cad": 0.035,
+      "lad": 0.0166,
+      "lcx": 0.0216,
+      "rca": 0.0346
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 302,
+    "risk": {
+      "cad": 0.0213,
+      "lad": 0.0166,
+      "lcx": 0.081,
+      "rca": 0.124
+    },
+    "prediction": {
+      "cad": 0,
+      "lad": 0,
+      "lcx": 0,
+      "rca": 0
+    }
+  },
+  {
+    "patient_id": 303,
+    "risk": {
+      "cad": 0.9122,
+      "lad": 0.9416,
+      "lcx": 0.2427,
+      "rca": 0.2119
+    },
+    "prediction": {
+      "cad": 1,
+      "lad": 1,
+      "lcx": 0,
+      "rca": 0
+    }
+  }
+]
