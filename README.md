@@ -1,102 +1,124 @@
 # CardioScope — Cardiovascular Risk Visualization & Prediction
 
-> **Clinical Safety Disclaimer:** CardioScope is for **educational and decision-support purposes only**. Predictions are not a substitute for formal diagnostic imaging, clinical examination, or advice from a qualified medical professional. Always consult a licensed cardiologist.
+> ⚠️ **Clinical Safety Disclaimer:** CardioScope is for **educational and decision-support purposes only**. Predictions are not a substitute for formal diagnostic imaging, clinical examination, or advice from a qualified medical professional. Always consult a licensed cardiologist.
 
 ---
 
 ## Overview
 
-CardioScope is an interactive full-stack application for the Multimodal AI Hackathon 2026 (Track A). It visualises coronary artery disease (CAD) predictions and vessel-level stenosis probabilities for 303 patients from the Z-Alizadeh Sani dataset, displayed on a rotatable 3D heart model with SHAP-based clinical explanations.
+CardioScope is a full-stack interactive application built for the **Multimodal AI Hackathon 2026 — Track A**. It combines trained ML models with a 3D heart visualization to predict coronary artery disease (CAD) and vessel-level stenosis (LAD, LCX, RCA) from clinical patient data.
 
-### Key Features
+### Key features
 
 | Feature | Detail |
 |---|---|
-| **Patient Browser** | Searchable, filterable list of all 303 patients with mini risk bars |
+| **Patient Browser** | Searchable, filterable list of all 303 stored patients |
 | **Risk Cards** | Arc-gauge cards for CAD / LAD / LCX / RCA with colour-coded risk levels |
-| **3D Heart Viewer** | Rotatable / zoomable GLB heart with colour-tinted mesh and interactive vessel markers |
-| **SHAP Analysis** | Per-patient, per-model horizontal bar charts showing feature contributions |
-| **Patient Vitals** | Combined top-feature panel with vessel risk bar chart |
-| **Cohort Stats** | Pie chart (CAD+/−), radar chart (avg risk per vessel), count grid |
-| **Clinical Disclaimer** | Persistent banner + floating toast on every page |
-
----
-
-## Project Structure
-
-```
-CardioScope/
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py          # FastAPI app + routes
-│   │   ├── models.py        # Pydantic response models
-│   │   └── data_loader.py   # JSON loading, caching, feature prettifier
-│   ├── data/
-│   │   ├── cardiovascular_predictions.json   # 303 patient predictions
-│   │   └── cardiovascular_shap.json          # SHAP values (Cath/LAD/LCX/RCA)
-│   ├── tests/
-│   │   ├── __init__.py
-│   │   └── test_api.py      # 16 pytest tests
-│   ├── heart.ipynb          # Original ML notebook
-│   └── requirements.txt
-│
-└── frontend/
-    ├── app/
-    │   ├── layout.tsx
-    │   ├── page.tsx          # Main dashboard (patient state, tabs, layout)
-    │   └── globals.css
-    ├── components/
-    │   ├── Header.tsx
-    │   ├── Disclaimer.tsx
-    │   ├── PatientSelector.tsx
-    │   ├── RiskCards.tsx
-    │   ├── HeartViewer.tsx   # React Three Fiber + GLB + vessel markers
-    │   ├── ShapPanel.tsx
-    │   ├── PatientVitals.tsx
-    │   └── SummaryStats.tsx
-    ├── lib/
-    │   ├── types.ts          # Shared TypeScript interfaces
-    │   ├── api.ts            # Typed fetch wrapper
-    │   └── utils.ts          # riskColor, riskLabel, lerpColor helpers
-    ├── public/models/
-    │   └── heart.glb         # 3D heart mesh
-    ├── types/r3f.d.ts
-    └── package.json
-```
+| **3D Heart Viewer** | Rotatable / zoomable GLB heart with interactive vessel markers |
+| **SHAP Analysis** | Per-patient feature contribution bar charts for all four models |
+| **Cohort Stats** | Pie, radar, and bar charts across the full 303-patient cohort |
+| **Live Predict** | Manual patient form → genuine real-time ML inference → results in 3D view |
+| **Model Metrics** | 5-fold CV evaluation table displayed in-app |
 
 ---
 
 ## Prerequisites
 
-| Tool | Version tested |
-|---|---|
-| Python | 3.12 |
-| Node.js | 20+ |
-| npm | 10+ |
+| Tool | Minimum | Tested with |
+|---|---|---|
+| Python | 3.10 | 3.12.10 |
+| Node.js | 18 | 24.12.0 |
+| npm | 9 | 11.6.2 |
 
 ---
 
-## Quick Start
+## Quick Start (Fresh Clone)
 
-### 1 — Clone / open workspace
+### Step 1 — Clone
 
 ```bash
+git clone <repo-url>
 cd CardioScope
 ```
 
-### 2 — Backend
+### Step 2 — Backend setup
 
 ```bash
 cd backend
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
+# macOS / Linux
+source .venv/bin/activate
+
 pip install -r requirements.txt
+```
+
+### Step 3 — Obtain the dataset and train the models
+
+The four model artifacts (`*.joblib`) and the raw dataset are excluded from the repository because they are large and the dataset contains patient data. You must generate them once before starting the backend.
+
+**3a — Download the dataset**
+
+Download the **Extension of Z-Alizadeh Sani Dataset** from either source:
+
+- **UCI ML Repository:** https://archive.ics.uci.edu/dataset/412/z+alizadeh+sani
+- **Kaggle:** search *"Extension Z-Alizadeh Sani dataset"*
+
+The file you need is:
+
+```
+extention of Z-Alizadeh sani   dataset (2).xlsx
+```
+
+Place it at:
+
+```
+backend/data/dataset.xlsx
+```
+
+**3b — Train the models**
+
+```bash
+# (inside backend/ with venv active)
+python train.py
+```
+
+This takes approximately 2–4 minutes. When it finishes you will see:
+
+```
+✓ Training complete.
+```
+
+And the following files will be created:
+
+```
+backend/data/models/
+├── model_cath.joblib      # XGBoost — Overall CAD
+├── model_lad.joblib       # ExtraTrees — LAD stenosis
+├── model_lcx.joblib       # XGBoost — LCX stenosis
+├── model_rca.joblib       # Logistic Regression — RCA stenosis
+└── feature_meta.json      # column order / feature list (committed)
+
+backend/data/
+└── model_evaluation.json  # 5-fold CV metrics (committed)
+```
+
+> **Note:** `feature_meta.json` and `model_evaluation.json` are already committed so the cohort stats and model metrics endpoint work immediately. Only the large `.joblib` files need to be regenerated.
+
+### Step 4 — Start the backend
+
+```bash
+# (inside backend/ with venv active)
 uvicorn app.main:app --reload --port 8000
 ```
 
-API is now live at **http://localhost:8000**  
+API live at: **http://localhost:8000**  
 Interactive docs: **http://localhost:8000/docs**
 
-### 3 — Frontend (new terminal)
+### Step 5 — Frontend setup (new terminal)
 
 ```bash
 cd frontend
@@ -104,11 +126,86 @@ npm install
 npm run dev
 ```
 
-Dashboard is now live at **http://localhost:3000**
+Dashboard live at: **http://localhost:3000**
+
+> **Note:** The frontend expects the backend at `http://localhost:8000` by default.  
+> To override, copy `frontend/.env.example` to `frontend/.env.local` and edit `NEXT_PUBLIC_API_URL`.
 
 ---
 
-## API Endpoints
+## Repository Structure
+
+```
+CardioScope/
+│
+├── .gitignore
+├── README.md
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py           # FastAPI app — all routes
+│   │   ├── models.py         # Pydantic request / response models
+│   │   ├── data_loader.py    # JSON loader + SHAP prettifier (cached)
+│   │   └── predictor.py      # Live inference engine (lazy model loading)
+│   │
+│   ├── data/
+│   │   ├── cardiovascular_predictions.json   # Pre-computed predictions (303 pts)
+│   │   ├── cardiovascular_shap.json          # Pre-computed SHAP values
+│   │   ├── model_evaluation.json             # CV metrics (generated by train.py)
+│   │   ├── dataset.xlsx                      # ← NOT in repo; download separately
+│   │   └── models/
+│   │       ├── feature_meta.json             # Column metadata (in repo)
+│   │       ├── model_cath.joblib             # ← NOT in repo; run train.py
+│   │       ├── model_lad.joblib              # ← NOT in repo; run train.py
+│   │       ├── model_lcx.joblib              # ← NOT in repo; run train.py
+│   │       └── model_rca.joblib              # ← NOT in repo; run train.py
+│   │
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   └── test_api.py       # 31 pytest tests
+│   │
+│   ├── train.py              # One-time model training script
+│   ├── verify.py             # Live end-to-end smoke test
+│   ├── pytest.ini
+│   └── requirements.txt
+│
+└── frontend/
+    ├── app/
+    │   ├── layout.tsx
+    │   ├── page.tsx          # Dashboard — all tabs + state
+    │   └── globals.css
+    │
+    ├── components/
+    │   ├── Header.tsx
+    │   ├── PatientSelector.tsx
+    │   ├── RiskCards.tsx
+    │   ├── HeartViewer.tsx       # React Three Fiber + GLB
+    │   ├── ShapPanel.tsx
+    │   ├── PatientVitals.tsx
+    │   ├── SummaryStats.tsx
+    │   └── PatientInputForm.tsx  # Live-predict patient input form
+    │
+    ├── lib/
+    │   ├── types.ts          # Shared TypeScript interfaces
+    │   ├── api.ts            # Typed fetch wrapper (GET + POST /predict)
+    │   └── utils.ts          # riskColor, riskToHex, lerpColor helpers
+    │
+    ├── public/models/
+    │   └── heart.glb         # 3D heart mesh (in repo)
+    │
+    ├── types/r3f.d.ts
+    ├── .env.example          # Copy to .env.local to override API URL
+    ├── next.config.ts
+    ├── tailwind.config.ts
+    └── package.json
+```
+
+---
+
+## API Reference
+
+### Existing patient data
 
 | Method | Path | Description |
 |---|---|---|
@@ -117,20 +214,46 @@ Dashboard is now live at **http://localhost:3000**
 | `GET` | `/patients?cad_only=true` | CAD-positive patients only |
 | `GET` | `/patients/{id}` | Full prediction for patient 1–303 |
 | `GET` | `/shap/{id}` | SHAP explanations (all 4 models) for patient |
-| `GET` | `/summary` | Cohort aggregate statistics (CAD/vessel counts, percentages, multi-vessel disease) |
+| `GET` | `/summary` | Cohort aggregate statistics |
 
-### Example responses
+### Live inference
 
-**`GET /patients/1`**
+| Method | Path | Description |
+|---|---|---|
+| `POST` | `/predict` | Real-time inference from manually entered patient features |
+| `GET` | `/model/evaluation` | 5-fold CV metrics for all 4 trained models |
+
+**`POST /predict` — example request body**
+
 ```json
 {
-  "patient_id": 1,
-  "risk": { "cad": 0.9281, "lad": 0.9307, "lcx": 0.1068, "rca": 0.4389 },
-  "prediction": { "cad": 1, "lad": 1, "lcx": 0, "rca": 0 }
+  "Age": 58, "Weight": 82, "Length": 172, "Sex": "Male", "BMI": 27.7,
+  "DM": 1, "HTN": 1, "Current Smoker": 0, "EX-Smoker": 1, "FH": 0,
+  "Obesity": "Y", "CRF": "N", "CVA": "N", "Airway disease": "N",
+  "Thyroid Disease": "N", "CHF": "N", "DLP": "Y",
+  "BP": 140, "PR": 78, "Edema": 0,
+  "Weak Peripheral Pulse": "N", "Lung rales": "N",
+  "Systolic Murmur": "N", "Diastolic Murmur": "N",
+  "Typical Chest Pain": 1, "Dyspnea": "N", "Function Class": 2,
+  "Atypical": "N", "Nonanginal": "N", "LowTH Ang": "N",
+  "Q Wave": 0, "St Elevation": 0, "St Depression": 1, "Tinversion": 1,
+  "LVH": "N", "Poor R Progression": "N", "BBB": "N",
+  "FBS": 130, "CR": 1.1, "TG": 210, "LDL": 140, "HDL": 38,
+  "BUN": 18, "ESR": 22, "HB": 14.2, "K": 4.5, "Na": 139,
+  "WBC": 8200, "Lymph": 32, "Neut": 61, "PLT": 230,
+  "EF-TTE": 45, "Region RWMA": 2, "VHD": "mild"
 }
 ```
 
-**`GET /shap/1`** — returns top-10 SHAP features per model (Cath, LAD, LCX, RCA), sorted by absolute value, with human-readable `feature_label`.
+**`POST /predict` — example response**
+
+```json
+{
+  "risk": { "cad": 0.9821, "lad": 0.8934, "lcx": 0.4102, "rca": 0.5673 },
+  "prediction": { "cad": 1, "lad": 1, "lcx": 0, "rca": 1 },
+  "source": "live_inference"
+}
+```
 
 ---
 
@@ -141,93 +264,168 @@ cd backend
 python -m pytest tests/ -v
 ```
 
-All 19 tests pass in ~1.2 s.
+**31 tests, all passing:**
 
 ```
-tests/test_api.py::test_health PASSED
-tests/test_api.py::test_get_all_patients_count PASSED
-tests/test_api.py::test_patient_summary_fields PASSED
-tests/test_api.py::test_patient_risk_range PASSED
-tests/test_api.py::test_cad_only_filter PASSED
-tests/test_api.py::test_get_patient_1 PASSED
-tests/test_api.py::test_get_patient_303 PASSED
-tests/test_api.py::test_get_patient_invalid_0 PASSED
-tests/test_api.py::test_get_patient_invalid_304 PASSED
-tests/test_api.py::test_patient_prediction_binary PASSED
-tests/test_api.py::test_shap_patient_1 PASSED
-tests/test_api.py::test_shap_entry_fields PASSED
-tests/test_api.py::test_shap_sorted_by_abs PASSED
-tests/test_api.py::test_shap_invalid_patient PASSED
-tests/test_api.py::test_summary PASSED
-tests/test_api.py::test_summary_vessel_counts PASSED
-tests/test_api.py::test_summary_new_fields PASSED
-tests/test_api.py::test_shap_feature_label_not_empty PASSED
-tests/test_api.py::test_all_shap_models_have_data PASSED
-19 passed in 1.16s
+tests/test_api.py::test_health                             PASSED
+tests/test_api.py::test_get_all_patients_count             PASSED
+tests/test_api.py::test_patient_summary_fields             PASSED
+tests/test_api.py::test_patient_risk_range                 PASSED
+tests/test_api.py::test_cad_only_filter                    PASSED
+tests/test_api.py::test_get_patient_1                      PASSED
+tests/test_api.py::test_get_patient_303                    PASSED
+tests/test_api.py::test_get_patient_invalid_0              PASSED
+tests/test_api.py::test_get_patient_invalid_304            PASSED
+tests/test_api.py::test_patient_prediction_binary          PASSED
+tests/test_api.py::test_shap_patient_1                     PASSED
+tests/test_api.py::test_shap_entry_fields                  PASSED
+tests/test_api.py::test_shap_sorted_by_abs                 PASSED
+tests/test_api.py::test_shap_invalid_patient               PASSED
+tests/test_api.py::test_summary                            PASSED
+tests/test_api.py::test_summary_vessel_counts              PASSED
+tests/test_api.py::test_summary_new_fields                 PASSED
+tests/test_api.py::test_shap_feature_label_not_empty       PASSED
+tests/test_api.py::test_all_shap_models_have_data          PASSED
+tests/test_api.py::test_predict_returns_200                PASSED
+tests/test_api.py::test_predict_response_structure         PASSED
+tests/test_api.py::test_predict_risk_range                 PASSED
+tests/test_api.py::test_predict_binary_predictions         PASSED
+tests/test_api.py::test_predict_high_risk_patient          PASSED
+tests/test_api.py::test_predict_low_risk_patient_cad_...   PASSED
+tests/test_api.py::test_predict_missing_required_field     PASSED
+tests/test_api.py::test_predict_invalid_sex_value          PASSED
+tests/test_api.py::test_predict_invalid_bbb_value          PASSED
+tests/test_api.py::test_predict_age_out_of_range           PASSED
+tests/test_api.py::test_predict_deterministic              PASSED
+tests/test_api.py::test_model_evaluation_endpoint          PASSED
+31 passed in ~8s
+```
+
+**Live end-to-end smoke test** (requires both servers running):
+
+```bash
+cd backend
+python verify.py   # 29/29 checks
 ```
 
 ---
 
-## Dataset
+## Model Performance
 
-**Z-Alizadeh Sani Dataset** — 303 patient records with:
-- Demographics, vital signs, lab values, ECG measurements, echocardiographic findings
-- Ground-truth labels: `Cath` (overall CAD), `LAD`, `LCX`, `RCA` stenosis status
+Models are trained on the full 303-patient dataset and evaluated with 5-fold stratified cross-validation.
 
-Available on [UCI ML Repository](https://archive.ics.uci.edu/dataset/412/z+alizadeh+sani) and [Kaggle](https://www.kaggle.com/).
+| Target | Algorithm | Accuracy | F1 | ROC-AUC |
+|---|---|---|---|---|
+| **Cath** (Overall CAD) | XGBoost | 85.5% | 90.1% | **90.7%** |
+| **LAD** | ExtraTrees | 80.5% | 84.3% | **83.7%** |
+| **LCX** | XGBoost | 68.0% | 57.3% | **73.8%** |
+| **RCA** | Logistic Regression | 66.0% | 58.6% | **69.3%** |
 
-**Target leakage prevention:** LAD, LCX, RCA, and Cath columns are excluded from model input features as required by the hackathon spec.
+LCX and RCA are harder targets due to class imbalance and weaker ECG signal — consistent with published results on this dataset.
+
+**Data leakage prevention:** The four target columns (`Cath`, `LAD`, `LCX`, `RCA`) are excluded from model input features. `Exertional CP` is dropped as a constant column (all values are `N`).
 
 ---
 
 ## Technology Stack
 
 ### Backend
-- **FastAPI** — async REST API
-- **Pydantic v2** — request/response validation
-- **Uvicorn** — ASGI server
-- **pytest** — test suite
+| Library | Version | Purpose |
+|---|---|---|
+| FastAPI | 0.115.6 | REST API framework |
+| Pydantic v2 | ≥ 2.12.5 | Request / response validation |
+| Uvicorn | 0.34.0 | ASGI server |
+| scikit-learn | ≥ 1.4 | Preprocessing pipelines, ExtraTrees, LogisticRegression |
+| XGBoost | ≥ 2.0 | XGBoost classifiers (Cath, LCX) |
+| pandas | ≥ 2.0 | Feature DataFrame construction |
+| joblib | ≥ 1.3 | Model serialization / deserialization |
+| pytest | 8.3.4 | Test suite |
 
 ### Frontend
-- **Next.js 15** (App Router) — React framework
-- **TypeScript** — full type safety
-- **Tailwind CSS** — utility-first styling
-- **React Three Fiber + Drei** — 3D heart rendering
-- **Three.js** — WebGL engine
-- **Recharts** — SHAP bar charts, radar, pie charts
-- **Framer Motion** — UI transitions
-- **Anime.js** — animation utilities
+| Library | Version | Purpose |
+|---|---|---|
+| Next.js | 15.1.6 | React framework (App Router) |
+| React | **18.2.0** | UI runtime |
+| TypeScript | ≥ 5.7 | Type safety |
+| Tailwind CSS | ≥ 3.4 | Utility-first styling |
+| React Three Fiber | **v8** | 3D scene (R3F v8 requires React 18) |
+| Drei | ≥ 9.114 | R3F helpers (OrbitControls, Html, useGLTF) |
+| Three.js | ≥ 0.171 | WebGL engine |
+| Recharts | ≥ 2.14 | Charts (SHAP bars, radar, pie) |
+
+> **React version note:** The frontend is pinned to React **18.2.0** via `overrides` in `package.json`. React Three Fiber v8 uses internal React APIs (`ReactCurrentOwner`) removed in React 19. Do not upgrade React without also upgrading to R3F v9+.
 
 ---
 
-## Risk Level Thresholds
+## Risk Levels
 
 | Probability | Label | Colour |
 |---|---|---|
-| 0–34% | LOW | 🟢 Green |
-| 35–64% | MODERATE | 🟡 Amber |
-| 65–100% | HIGH | 🔴 Red |
+| 0 – 34% | LOW | 🟢 Green |
+| 35 – 64% | MODERATE | 🟡 Amber |
+| 65 – 100% | HIGH | 🔴 Red |
 
 ---
 
-## 3D Model Notes
+## 3D Heart Notes
 
-The `heart.glb` file contains a single heart mesh. Because separate coronary artery meshes are not available in this asset:
+`public/models/heart.glb` is a single-mesh GLB file (no separate artery geometry). The visualization compensates as follows:
 
-- The **mesh colour is tinted** from green → amber → red based on overall CAD risk probability
-- **Interactive HTML markers** are overlaid at anatomically approximate positions for LAD, LCX, and RCA
-- Markers **pulse** (animated ring) for vessels with positive stenosis predictions
-- Hovering a marker shows the vessel name, risk %, and prediction status
-- The 3D viewer supports **drag-to-rotate**, **scroll-to-zoom**, and **OrbitControls** damping
+- The mesh is **colour-tinted** from green → amber → red based on overall CAD probability
+- **HTML overlay markers** are placed at anatomically approximate positions for LAD, LCX, and RCA
+- Markers **pulse** when the corresponding vessel is predicted as stenotic
+- Hovering or clicking a marker shows the vessel name, risk percentage, and binary prediction
+- Markers are labelled *"Approximate anatomical overlays — not imaging-derived"*
 
 ---
 
-## Evaluation Alignment
+## Dataset
 
-| Criterion | Implementation |
-|---|---|
-| **Predictive Performance (30%)** | Pre-computed ML predictions from XGBoost/LR pipeline; risk probabilities and binary predictions for all 4 targets |
-| **3D Visualization (25%)** | Interactive GLB heart with risk-tinted mesh, vessel marker overlay, rotate/zoom |
-| **Clinical Interpretability (20%)** | Per-patient SHAP bar charts for all 4 models; feature labels mapped to clinical names |
-| **System Integration (15%)** | FastAPI backend → typed fetch → React state; all panels update on patient change |
-| **Technical Implementation (10%)** | TypeScript + Pydantic validation, 16 tests, clean architecture, this README |
+**Z-Alizadeh Sani Dataset (Extension)**  
+303 patients · 54 input features · 4 binary targets
+
+| Target | Positive class | Prevalence |
+|---|---|---|
+| Cath | CAD | 72.3% (219 / 303) |
+| LAD | Stenotic | 58.4% (177 / 303) |
+| LCX | Stenotic | 38.9% (118 / 303) |
+| RCA | Stenotic | 45.2% (137 / 303) |
+
+**Citation:**
+
+> R. Alizadehsani et al., "A data mining approach for diagnosis of coronary artery disease," *Computer Methods and Programs in Biomedicine*, vol. 111, no. 1, pp. 52–61, Jul. 2013.
+
+> R. Alizadehsani et al., "Coronary artery disease detection using computational intelligence methods," *Knowledge-Based Systems*, 109 (2016) 187–197.
+
+---
+
+## Evaluation Alignment (Hackathon Track A)
+
+| Criterion | Weight | Implementation |
+|---|---|---|
+| **Predictive Performance** | 30% | 4 trained classifiers; ROC-AUC 0.69–0.91; 5-fold CV metrics displayed in-app |
+| **3D Visualization** | 25% | Interactive GLB heart; risk-coloured mesh; animated vessel markers; drag/zoom |
+| **Clinical Interpretability** | 20% | SHAP bar charts (all 4 models); plain-language summary; feature-level contribution bars |
+| **System Integration** | 15% | FastAPI → typed fetch → React state; all panels update on patient change + live predict |
+| **Technical Implementation** | 10% | TypeScript + Pydantic validation; 31 tests; clean layered architecture |
+
+---
+
+## Troubleshooting
+
+**`ReactCurrentOwner` / Three.js crash on startup**  
+The `overrides` block in `package.json` pins React to 18.2.0. If you see this error, run:
+```bash
+cd frontend
+npm install --legacy-peer-deps
+```
+Then confirm: `node -e "const R=require('./node_modules/react'); console.log(R.version)"` prints `18.2.0`.
+
+**Backend returns 500 on `POST /predict`**  
+The model `.joblib` files are missing. Run `python train.py` from the `backend/` directory.
+
+**`FileNotFoundError: dataset.xlsx`**  
+Download the dataset (see Step 3a above) and place it at `backend/data/dataset.xlsx`.
+
+**Frontend can't reach the API**  
+Check that the backend is running on port 8000, or set `NEXT_PUBLIC_API_URL` in `frontend/.env.local`.
